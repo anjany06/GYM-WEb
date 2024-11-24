@@ -4,8 +4,15 @@ import { Box, Button } from "@mui/material";
 import BodyPart from "./BodyPart";
 import leftArrow from "../assets/icons/left-arrow.png";
 import rightArrow from "../assets/icons/right-arrow.png";
+import ExerciseCard from "./ExerciseCard";
 
-const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
+const HorizontalScrollbar = ({
+  data,
+  bodyParts,
+  setBodyPart,
+  bodyPart,
+  isBodyParts,
+}) => {
   const scrollbarRef = useRef(null); // Create a ref to access the scrollbar
 
   const scrollLeft = () => {
@@ -56,12 +63,16 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
               display="inline-block"
               width={itemWidth} // Dynamic width of each item
             >
-              <BodyPart
-                item={item}
-                setBodyPart={setBodyPart}
-                bodyPart={bodyPart}
-                style={{ height: "100%" }}
-              />
+              {isBodyParts ? (
+                <BodyPart
+                  item={item}
+                  setBodyPart={setBodyPart}
+                  bodyPart={bodyPart}
+                  style={{ height: "100%" }}
+                />
+              ) : (
+                <ExerciseCard exercise={item} />
+              )}
             </Box>
           ))}
         </motion.div>
