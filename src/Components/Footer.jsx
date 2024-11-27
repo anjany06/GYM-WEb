@@ -5,7 +5,7 @@ import Logo from "../assets/images/logo5.png";
 
 const Footer = () => {
   return (
-    <Box mt="80px" bgcolor="#e0ddca">
+    <Box mt="80px" bgcolor="#eeeeec">
       <Stack gap="40px" alignItems="center" px="40px" pt="24px">
         <img src={Logo} alt="logo" width="200px" height="40px" />
         <Typography

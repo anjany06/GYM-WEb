@@ -51,7 +51,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         <TextField
           sx={{
             input: { fontWeight: "700", border: "none", borderRadius: "4px" },
-            width: { lg: "800px", xs: "100%" },
+            width: { lg: "800px", xs: "90%" },
             backgroundColor: "#fff",
           }}
           height="76px"
@@ -68,7 +68,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             bgcolor: "#ff2625",
             color: "#fff",
             textTransform: "none",
-            width: { lg: "175px", xs: "80px" },
+            width: { lg: "175px", xs: "60px" },
             fontSize: { lg: "20px", xs: "14px" },
             height: "56px",
             position: "absolute",
