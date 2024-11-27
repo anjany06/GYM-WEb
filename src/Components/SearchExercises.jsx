@@ -47,13 +47,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       >
         Awesome Exercises You Should Know
       </Typography>
-      <Box position="relative" mb="72px">
+      <Box position="relative" mb="72px" marginRight="50px">
         <TextField
           sx={{
             input: { fontWeight: "700", border: "none", borderRadius: "4px" },
-            width: { lg: "800px", xs: "350px" },
+            width: { lg: "800px", xs: "100%" },
             backgroundColor: "#fff",
-            borderRadius: "40px",
           }}
           height="76px"
           value={search}

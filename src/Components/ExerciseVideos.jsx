@@ -19,7 +19,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         alignItems="center"
         sx={{
           flexDirection: { lg: "row" },
-          gap: { lg: "110px", xs: "0" },
+          gap: { lg: "80px", xs: "0" },
         }}
       >
         {exerciseVideos?.slice(0, 6).map((item, index) => (
@@ -29,11 +29,22 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
             href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
             target="_blank"
             rel="noreferrer"
+            style={{
+              display: "block",
+              width: "350px",
+              height: "400px",
+              textDecoration: "none",
+              color: "inherit",
+              overflow: "hidden",
+              // border: "1px solid #ccc",
+              // borderRadius: "8px",
+              margin: "10px", // Margin for spacing between cards
+            }}
           >
             <img src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
               <Typography variant="h5" color="#000">
-                {item.video.title.slice(0, 31)}
+                {item.video.title}
               </Typography>
               <Typography variant="h6" color="#000">
                 {item.video.channelName}

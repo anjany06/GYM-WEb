@@ -56,7 +56,6 @@ const HorizontalScrollbar = ({
         >
           {data.map((item) => (
             <Box
-              key={item.id || item}
               itemId={item.id || item}
               title={item.id || item}
               m={`0 ${itemMargin / 2}px`} // Use half of the total margin
@@ -71,7 +70,7 @@ const HorizontalScrollbar = ({
                   style={{ height: "100%" }}
                 />
               ) : (
-                <ExerciseCard exercise={item} />
+                <ExerciseCard exercise={item} /> // Render the exercise card
               )}
             </Box>
           ))}
@@ -84,7 +83,7 @@ const HorizontalScrollbar = ({
         </Button>
         <Button
           onClick={scrollRight}
-          sx={{ position: "absolute", left: 100, zIndex: 1 }}
+          sx={{ position: "absolute", right: 0, zIndex: 1 }} // Adjusted to the right for better UX
         >
           <img src={rightArrow} alt="right-arrow" /> {/* Right Arrow */}
         </Button>

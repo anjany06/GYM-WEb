@@ -13,7 +13,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
+    <Box
+      width="400px"
+      bgcolor="#f6f8e2"
+      sx={{ width: { xl: "1488px" } }}
+      m="auto"
+    >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
