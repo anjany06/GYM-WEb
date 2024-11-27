@@ -15,7 +15,7 @@ function App() {
   return (
     <Box
       width="400px"
-      bgcolor="#fae7fb"
+      bgcolor="#fffff0"
       sx={{ width: { xl: "1488px" } }}
       m="auto"
     >
