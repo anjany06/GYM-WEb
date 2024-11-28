@@ -25,7 +25,6 @@ const ExerciseDetail = () => {
         `${exerciseDbUrl}/exercises/exercise/${id}`,
         exerciseOptions
       );
-      console.log(exerciseDetailData); // Log the fetched data
       setExerciseDetail(exerciseDetailData);
 
       const exerciseVideosData = await fetchData(
