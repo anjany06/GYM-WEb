@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography, Button } from "@mui/material";
-import HeroBannerImage from "../assets/images/banner.png";
+import HeroBannerImage from "../assets/images/main image.webp";
 
 const HeroBanner = () => {
   return (
@@ -18,7 +18,8 @@ const HeroBanner = () => {
         mb="23px"
         mt="30px"
       >
-        Sweat, Smile <br /> and Repeat
+        Push Limits, <br />
+        Build Strength
       </Typography>
       <Typography fontSize="22px" lineHeight="35px" mb={4}>
         Checkout the most effective exercises
@@ -42,7 +43,11 @@ const HeroBanner = () => {
       >
         Exercise
       </Typography>
-      <img src={HeroBannerImage} alt="Banner" className="hero-banner-img" />
+      <img
+        src={HeroBannerImage}
+        alt="Banner"
+        className="hero-banner-img"
+      />
     </Box>
   );
 };
